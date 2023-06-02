@@ -13,23 +13,11 @@ header {
     padding: 20px;
     text-align: center;
     color: #fff;
-    animation: fade-in 1s;
-}
-
-@keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 
 nav {
     background-color: #f9a825;
     padding: 10px;
-    animation: slide-down 1s;
-}
-
-@keyframes slide-down {
-    from { transform: translateY(-100%); }
-    to { transform: translateY(0); }
 }
 
 nav ul {
@@ -54,13 +42,16 @@ nav ul li a:hover {
     color: #ffc107;
 }
 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 section {
-    padding: 40px;
-    background-color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    animation: fade-in 1s;
 }
 
 section h2 {
@@ -109,10 +100,4 @@ footer {
     padding: 20px;
     text-align: center;
     color: #777;
-    animation: fade-in 1s;
-}
-
-@keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
