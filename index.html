@@ -1,71 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pippo Bot - Bollywood and Indian Games</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Discord Bot Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://media.discordapp.net/attachments/1092244601525510154/1114374115168624640/indian-traditional-games-subtle-blur-dark-.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+            color: #ffffff;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 4px;
+            background-color: #7289DA;
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #4E5D94;
+        }
+
+        .discord-tag {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-family: 'Arial', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #7289DA;
+            padding: 6px 12px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #heading {
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 8px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        #heading::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            z-index: -1;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Pippo Bot!</h1>
-        <p>A Discord bot for Bollywood and Indian Games</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#games">Games</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section id="home">
-            <h2>Explore the World of Bollywood and Indian Games</h2>
-            <p>Welcome to the world of Pippo Bot! Engage in exciting games inspired by Bollywood movies and traditional Indian classroom games.</p>
-            <p>Join our Discord server to add Pippo Bot to your server and start playing!</p>
-            <a href="https://discord.gg/pippo-bot" target="_blank">Join Our Discord Server</a>
-        </section>
-
-        <section id="games">
-            <h2>Games</h2>
-            <div class="game-card">
-                <div class="game-content">
-                    <h3>Bollywood Movie Quiz</h3>
-                    <p>Test your knowledge of Bollywood movies with our interactive quiz game. Guess the movie based on the given hints and score points!</p>
-                    <a href="#">Play Now</a>
-                </div>
+    <div class="container">
+        <div class="background-image"></div>
+        <div class="content">
+            <img class="profile-picture" src="https://cdn.discordapp.com/avatars/1066895131485163570/24624fa766fcff254c17cfe9463f4a32.png?size=256" alt="Profile Picture">
+            <h1 id="heading">Pippo</h1>
+            <p>A discord games bot, but Indian</p>
+            <div class="button-container">
+                <a class="button" href="https://discord.gg/ugcEEd8pAP" target="_blank">Server Link</a>
+                <a class="button" href="https://discord.com/api/oauth2/authorize?client_id=1066895131485163570&permissions=139586750528&scope=bot%20applications.commands" target="_blank">Invite</a>
             </div>
-            <div class="game-card">
-                <div class="game-content">
-                    <h3>Antakshari</h3>
-                    <p>Get ready for a musical battle! Play the traditional Indian classroom game of Antakshari with friends in your Discord server.</p>
-                    <a href="#">Play Now</a>
-                </div>
-            </div>
-            <!-- Add more game cards as needed -->
-        </section>
-
-        <section id="about">
-            <h2>About Pippo Bot</h2>
-            <p>Pippo Bot is a versatile Discord bot designed to bring entertainment and fun to your server. It offers a range of games and interactive features inspired by Bollywood and traditional Indian culture.</p>
-            <p>Stay tuned for more exciting updates and new game releases!</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>For any inquiries or suggestions, feel free to reach out to us:</p>
-            <ul>
-                <li>Email: info@pippobot.com</li>
-                <li>Discord: Pippo Bot Official Server</li>
-                <li>Twitter: @PippoBot</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Pippo Bot. All rights reserved.</p>
-    </footer>
+        </div>
+        <div class="discord-tag">TheWhistler#5514</div>
+    </div>
 </body>
 </html>
